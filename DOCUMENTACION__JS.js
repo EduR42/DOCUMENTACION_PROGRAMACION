@@ -17,7 +17,7 @@
 // #endregion 
 
 
- // #region ----->>> RECORTA VALORES A UNA CADENA DE TEXTO <<<--------
+// #region ----->>> RECORTA VALORES A UNA CADENA DE TEXTO <<<--------
  const str = "DelftStacks";
  const str2 = str.substring(0, str.length - 2);
  console.log(str2);
@@ -31,3 +31,10 @@
  var yI = vFechaInicio.getFullYear();
  sfechaInicio = (dI <= 9 ? '0' + dI : dI) + '/' + (mI <= 9 ? '0' + mI : mI) + '/' + yI + ' ' + '00:00';
  // #endregion 
+
+
+ // #region ----->>> BORRA SOLO LOS ESPACIOS EN BLANCO EN UNA CADENA DE TEXTO <<<--------
+ const str = "DelftS    tacks  ";
+ const str2 = str.replace(/\s+/g, '');
+ console.log(str2);
+// #endregion 
